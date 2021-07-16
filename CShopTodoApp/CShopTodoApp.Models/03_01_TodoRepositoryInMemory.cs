@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace CShopTodoApp.Models
 {
-    public class TodoRepositoryInMemory : ITodoRepositoryInMemory
+    public class TodoRepositoryInMemory : ITodoRepository
     {
 
         // 인-메모리 역할을 해줄 컬렉션 생성

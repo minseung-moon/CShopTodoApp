@@ -2,13 +2,13 @@
 using System;
 using System.Collections.Generic;
 
-namespace CShopTodoApp.ConsoleApp
+namespace CShopTodoApp.ConsoleAppFile
 {
     class Program
     {
         static void Main(string[] args)
         {
-            ITodoRepository _repository = new TodoRepositoryInMemory();
+            ITodoRepository _repository = new TodoRepositoryFile(@"C:\Temp\Todos.txt");
 
             List<Todo> todos = new List<Todo>();
             todos = _repository.GetAll();
